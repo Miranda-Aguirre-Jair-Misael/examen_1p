@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Rendimientos de Inversiones</title>
+  <link rel="stylesheet" href="./css/stilo.css">
+  <script src="./javascript/java.js"></script>
+</head>
+<body>
+
+<div class="calculadora">
+  <h2>Calculadora de Rendimientos de Inversiones</h2>
+  <p>Tasa de interés anual: 21.5%</p>
+  <label for="capital">Capital inicial:</label>
+  <input type="number" id="capital" placeholder="Ingrese el capital inicial" min="1000" max="10000">
+  <label for="periodo">Periodo de inversión:</label>
+  <select id="periodo">
+    <option value="52">Semanal</option>
+    <option value="26">Quincenal</option>
+    <option value="12">Mensual</option>
+    <option value="1">Anual</option>
+  </select>
+  <label for="years">Número de años (1-5):</label>
+  <input type="number" id="years" placeholder="Ingrese el número de años" min="1" max="5">
+  <button onclick="calcularRendimiento()">Calcular</button>
+  <div id="resultado"></div>
+</div>
+
+</body>
+</html>
